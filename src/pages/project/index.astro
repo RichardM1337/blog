@@ -66,9 +66,6 @@ const posts = (await getCollection("project")).sort(
       ul li a:hover .date {
         color: rgb(var(--accent));
       }
-      ul a:hover img {
-        box-shadow: var(--box-shadow);
-      }
       @media (max-width: 720px) {
         ul {
           gap: 0.5em;
@@ -90,7 +87,7 @@ const posts = (await getCollection("project")).sort(
     <Header />
     <main>
       <section>
-        <h1>welcome to my projects</h1>
+        <h1>welcome to my</h1>
         <ul>
           {
             posts.map((post) => (
