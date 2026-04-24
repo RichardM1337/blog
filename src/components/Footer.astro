@@ -1,28 +1,33 @@
 ---
+import "../styles/global.css";
 const today = new Date();
 ---
 
-<footer>
-  &copy; {today.getFullYear()} All Rights Reserved
-</footer>
+<footer
+  class="text-center px-4 pt-8 pb-24 bg-[linear-gradient(var(--gray-gradient))] bg-no-repeat"
+>
+  <p>
+    &copy; {today.getFullYear()} All Rights Reserved
+  </p>
 
-<style>
-  footer {
-    padding: 2em 1em 6em 1em;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    text-align: center;
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-  }
-  .social-links a {
-    text-decoration: none;
-    color: rgb(var(--gray));
-  }
-  .social-links a:hover {
-    color: rgb(var(--gray-dark));
-  }
-</style>
+  <div class="flex justify-center gap-4 mt-4">
+    <a
+      href="#"
+      class="no-underline text-[rgb(var(--gray))] hover:text-[rgb(var(--gray-dark))]"
+    >
+      Twitter
+    </a>
+    <a
+      href="#"
+      class="no-underline text-[rgb(var(--gray))] hover:text-[rgb(var(--gray-dark))]"
+    >
+      GitHub
+    </a>
+    <a
+      href="#"
+      class="no-underline text-[rgb(var(--gray))] hover:text-[rgb(var(--gray-dark))]"
+    >
+      LinkedIn
+    </a>
+  </div>
+</footer>
