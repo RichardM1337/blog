@@ -37,12 +37,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           }
         </div>
 
-        {/* Content */}
-        <div class="w-[720px] max-w-[calc(100%-2em)] mx-auto p-4">
-          {/* Title Section */}
+        <div class="w-180 max-w-[calc(100%-2em)] mx-auto p-4">
           <div class="mb-4 py-4 text-center leading-none">
-            {/* Dates */}
-            <div class="mb-2 text-[rgb(var(--gray))]">
+            <div class="mb-2">
               <FormattedDate date={pubDate} />
 
               {

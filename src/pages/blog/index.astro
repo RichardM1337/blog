@@ -22,7 +22,7 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
 
-    <main class="w-[960px] max-w-full mx-auto">
+    <main class="w-240 max-w-full mx-auto">
       <section>
         <ul class="flex flex-wrap gap-8 list-none m-0 p-0 max-[720px]:gap-2">
           {
@@ -49,14 +49,14 @@ const posts = (await getCollection("blog")).sort(
 
                   <h4
                     class:list={[
-                      "m-0 leading-none text-[rgb(var(--black))] transition-colors duration-200",
+                      "m-0 leading-none transition-colors duration-200",
                       index === 0 ? "text-4xl mb-2" : "text-base",
                     ]}
                   >
                     {post.data.title}
                   </h4>
 
-                  <p class="m-0 text-[rgb(var(--gray))] transition-colors duration-200 group-hover:text-[rgb(var(--accent))]">
+                  <p class="m-0 transition-colors duration-200">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
