@@ -1,14 +1,13 @@
 ---
 import "../styles/global.css";
-import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
 ---
 
-<header class="bg-white px-4">
+<header class="bg-white px-4 py-4">
   <nav class="flex items-center justify-between relative">
     <h2 class="text-sm m-0">
-      <a href="/" class="no-underline text-black">
-        {SITE_TITLE}
+      <a href="/">
+        <img src="/src/assets/rgif.gif" alt="Logo" class="h-20 w-20" />
       </a>
     </h2>
     <div class="absolute left-1/2 -translate-x-1/2 flex gap-4">

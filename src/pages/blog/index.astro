@@ -6,7 +6,6 @@ import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -16,47 +15,34 @@ const posts = (await getCollection("blog")).sort(
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title="this is the title" description="this is the description" />
   </head>
-
   <body>
     <Header />
 
-    <main class="w-240 max-w-full mx-auto">
+    <main class="w-full max-w-5xl mx-auto">
       <section>
-        <ul class="flex flex-wrap gap-8 list-none m-0 p-0 max-[720px]:gap-2">
+        <ul
+          class="list-none m-0 p-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+        >
           {
-            posts.map((post, index) => (
-              <li
-                class:list={[
-                  "w-[calc(50%-1rem)] max-[720px]:w-full max-[720px]:text-center",
-                  index === 0 && "w-full mb-4 text-center max-[720px]:mb-0",
-                ]}
-              >
-                <a href={`/blog/${post.id}/`} class="block no-underline group">
+            posts.map((post) => (
+              <li class="w-full mb-8">
+                <a
+                  href={`/blog/${post.id}/`}
+                  class="block no-underline group w-full"
+                >
                   {post.data.heroImage && (
                     <Image
                       width={720}
                       height={360}
                       src={post.data.heroImage}
                       alt=""
-                      class:list={[
-                        "mb-2 rounded-xl transition-all duration-200",
-                        index === 0 && "w-full",
-                      ]}
+                      class="mb-4 rounded-xl w-full"
                     />
                   )}
-
-                  <h4
-                    class:list={[
-                      "m-0 leading-none transition-colors duration-200",
-                      index === 0 ? "text-4xl mb-2" : "text-base",
-                    ]}
-                  >
-                    {post.data.title}
-                  </h4>
-
-                  <p class="m-0 transition-colors duration-200">
+                  <h4 class="m-0 text-2xl mb-2">{post.data.title}</h4>
+                  <p class="m-0 text-gray-600">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
