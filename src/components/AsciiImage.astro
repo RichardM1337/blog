@@ -1,0 +1,78 @@
+---
+const { src, alt = "" } = Astro.props;
+---
+
+<div class="w-full">
+  <pre
+    class="ascii w-full text-[6px] leading-1.5 md:text-[8px] md:leading-2 overflow-hidden">
+  </pre>
+  <img src={src} alt={alt} class="hidden img" />
+  <canvas class="hidden"></canvas>
+</div>
+
+<script>
+  document.querySelectorAll(".ascii-wrapper").forEach((wrapper) => {
+    const img = wrapper.querySelector(".img");
+    const pre = wrapper.querySelector(".ascii");
+    const canvas = wrapper.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const run = () => {
+      const containerWidth = wrapper.clientWidth;
+
+      const charWidth = 6; // must match Tailwind
+      const charHeight = 6; // must match leading
+
+      // how many characters fit across
+      const cols = Math.floor(containerWidth / charWidth);
+
+      // preserve image aspect ratio
+      const aspectRatio = img.naturalHeight / img.naturalWidth;
+
+      // adjust for character aspect ratio (characters are taller)
+      const rows = Math.floor(cols * aspectRatio * 0.5);
+
+      canvas.width = cols;
+      canvas.height = rows;
+
+      ctx.drawImage(img, 0, 0, cols, rows);
+
+      const pixels = ctx.getImageData(0, 0, cols, rows).data;
+
+      const chars = "@#S%?*+;:,.";
+      let ascii = "";
+
+      for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+          const i = (y * cols + x) * 4;
+
+          const r = pixels[i];
+          const g = pixels[i + 1];
+          const b = pixels[i + 2];
+
+          const brightness = (r + g + b) / 3;
+          const char =
+            chars[Math.floor((brightness / 255) * (chars.length - 1))];
+
+          ascii += char;
+        }
+        ascii += "\n";
+      }
+
+      pre.textContent = ascii;
+    };
+
+    if (img.complete) {
+      run();
+    } else {
+      img.onload = run;
+    }
+  });
+</script>
+
+<style>
+  .ascii {
+    font-family: monospace;
+    white-space: pre;
+  }
+</style>
