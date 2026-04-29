@@ -2,35 +2,29 @@
 const { src, alt = "" } = Astro.props;
 ---
 
-<div class="w-full">
-  <pre
-    class="ascii w-full text-[6px] leading-1.5 md:text-[8px] md:leading-2 overflow-hidden">
-  </pre>
-  <img src={src} alt={alt} class="hidden img" />
+<div class="ascii-wrapper w-full">
+  <pre class="ascii w-full text-[8px] leading-1.5 whitespace-pre"></pre>
+  <img class="hidden img" src={src} alt={alt} />
   <canvas class="hidden"></canvas>
 </div>
 
 <script>
-  document.querySelectorAll(".ascii-wrapper").forEach((wrapper) => {
+  function initAscii(wrapper) {
     const img = wrapper.querySelector(".img");
     const pre = wrapper.querySelector(".ascii");
     const canvas = wrapper.querySelector("canvas");
     const ctx = canvas.getContext("2d");
 
     const run = () => {
-      const containerWidth = wrapper.clientWidth;
+      const maxWidth = 150;
 
-      const charWidth = 6; // must match Tailwind
-      const charHeight = 6; // must match leading
+      // 👉 NEW: control height here
+      const heightFactor = 1.8; // >1 = taller, <1 = shorter
 
-      // how many characters fit across
-      const cols = Math.floor(containerWidth / charWidth);
-
-      // preserve image aspect ratio
       const aspectRatio = img.naturalHeight / img.naturalWidth;
 
-      // adjust for character aspect ratio (characters are taller)
-      const rows = Math.floor(cols * aspectRatio * 0.5);
+      const cols = Math.min(img.naturalWidth, maxWidth);
+      const rows = Math.floor(cols * aspectRatio * 0.55 * heightFactor);
 
       canvas.width = cols;
       canvas.height = rows;
@@ -51,10 +45,7 @@ const { src, alt = "" } = Astro.props;
           const b = pixels[i + 2];
 
           const brightness = (r + g + b) / 3;
-          const char =
-            chars[Math.floor((brightness / 255) * (chars.length - 1))];
-
-          ascii += char;
+          ascii += chars[Math.floor((brightness / 255) * (chars.length - 1))];
         }
         ascii += "\n";
       }
@@ -62,12 +53,12 @@ const { src, alt = "" } = Astro.props;
       pre.textContent = ascii;
     };
 
-    if (img.complete) {
-      run();
-    } else {
-      img.onload = run;
-    }
-  });
+    if (img.complete) run();
+    else img.onload = run;
+  }
+
+  // ✅ run for ALL instances (safe + simple)
+  document.querySelectorAll(".ascii-wrapper").forEach(initAscii);
 </script>
 
 <style>

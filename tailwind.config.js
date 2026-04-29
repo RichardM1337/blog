@@ -2,7 +2,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        glusp: ["var(--font-glusp)", "sans-serif"],
+        jetbrains: ["var(--font-jetmono)", "sans-serif"],
       },
     },
   },

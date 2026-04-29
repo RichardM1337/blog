@@ -1,7 +1,7 @@
 @import "tailwindcss";
 body {
-	font-family: var(--font-glusp);
-	margin: 0;
+	font-family: var(--font-jetmono);
+	/* margin: 0;
 	padding: 0;
 	text-align: left;
 	background-size: 100% 600px;
@@ -9,7 +9,7 @@ body {
 	overflow-wrap: break-word;
 	font-size: 20px;
 	line-height: 1.7;
-	min-height:100vh
+	min-height:100vh */
 }
 h1,
 h2,
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-	font:var(--font-glusp);
+	font:var(--font-);
 	margin: 0 0 0.5rem 0;
 	line-height: 1.2;
 }
@@ -55,11 +55,6 @@ input {
 }
 table {
 	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
 }
 pre {
 	padding: 1.5em;

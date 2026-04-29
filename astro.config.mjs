@@ -14,13 +14,19 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.local(),
-      name: "Glusp",
-      cssVariable: "--font-glusp",
+      name: "JetBrains Mono",
+      cssVariable: "--font-jetmono",
       fallbacks: ["sans-serif"],
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/OTF®-Glusp.ttf"],
+            src: ["./src/assets/fonts/JetBrainsMono-Regular.woff2"],
+            weight: 400,
+            style: "normal",
+            display: "swap",
+          },
+          {
+            src: ["./src/assets/fonts/JetBrainsMono-Bold.woff2"],
             weight: 700,
             style: "normal",
             display: "swap",

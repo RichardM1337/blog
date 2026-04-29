@@ -18,34 +18,31 @@ const posts = (await getCollection("blog")).sort(
   <head>
     <BaseHead title="this is the title" description="this is the description" />
   </head>
+
   <body>
     <Header />
 
     <main class="w-full max-w-5xl mx-auto">
       <section>
         <ul
-          class="list-none m-0 p-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+          class="list-none m-0 p-0 grid grid-cols-1 md:grid-cols-2 gap-x-96 gap-y-56 items-start w-full max-w-7xl mx-auto"
         >
           {
             posts.map((post) => (
-              <li class="w-full mb-8">
+              <li class="w-full flex flex-col items-center text-center py-10">
                 <a
                   href={`/blog/${post.id}/`}
                   class="block no-underline group w-full"
                 >
-                  <div class="ascii-wrapper w-full overflow-hidden rounded-xl">
-                    {post.data.heroImage && (
-                      <AsciiImage
-                        src={post.data.heroImage.src}
-                        width={720}
-                        height={360}
-                        alt=""
-                        class="mb-4 rounded-xl w-full"
-                      />
-                    )}
+                  <div class="w-full flex justify-center mb-12">
+                    <div class="inline-block">
+                      <AsciiImage src={post.data.heroImage.src} alt="" />
+                    </div>
                   </div>
-                  <h4 class="m-0 text-2xl mb-2">{post.data.title}</h4>
-                  <p class="m-0 text-gray-600">
+
+                  <h4 class="mt-4 text-2xl font-medium">{post.data.title}</h4>
+
+                  <p class="mt-2 m-0 text-gray-600">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
