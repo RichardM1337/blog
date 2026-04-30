@@ -22,10 +22,10 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
 
-    <main class="w-full max-w-5xl mx-auto">
+    <div class="w-full max-w-450 mx-auto px-6">
       <section>
         <ul
-          class="list-none m-0 p-0 grid grid-cols-1 md:grid-cols-2 gap-x-96 gap-y-56 items-start w-full max-w-7xl mx-auto"
+          class="list-none m-0 p-0 grid grid-cols-1 2xl:grid-cols-2 gap-x-40 gap-y-24"
         >
           {
             posts.map((post) => (
@@ -51,7 +51,7 @@ const posts = (await getCollection("blog")).sort(
           }
         </ul>
       </section>
-    </main>
+    </div>
 
     <Footer />
   </body>

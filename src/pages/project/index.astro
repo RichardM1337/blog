@@ -18,30 +18,31 @@ const posts = (await getCollection("project")).sort(
   <head>
     <BaseHead title="this is the title" description="this is the description" />
   </head>
+
   <body>
     <Header />
 
-    <main class="w-full max-w-5xl mx-auto">
+    <div class="w-full max-w-450 mx-auto px-6">
       <section>
         <ul
-          class="list-none m-0 p-0 grid grid-cols-1 md:grid-cols-2 gap-x-96 gap-y-32 items-start w-full max-w-7xl mx-auto"
+          class="list-none m-0 p-0 grid grid-cols-1 2xl:grid-cols-2 gap-x-40 gap-y-24"
         >
           {
             posts.map((post) => (
-              <li class="w-full flex flex-col items-center text-center">
+              <li class="w-full flex flex-col items-center text-center py-10">
                 <a
                   href={`/blog/${post.id}/`}
                   class="block no-underline group w-full"
                 >
-                  <div class="w-full flex justify-center mb-6">
+                  <div class="w-full flex justify-center mb-12">
                     <div class="inline-block">
                       <AsciiImage src={post.data.heroImage.src} alt="" />
                     </div>
                   </div>
 
-                  <h4 class="mt-2 text-xl font-medium">{post.data.title}</h4>
+                  <h4 class="mt-4 text-2xl font-medium">{post.data.title}</h4>
 
-                  <p class="m-0 text-gray-600">
+                  <p class="mt-2 m-0 text-gray-600">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
@@ -50,7 +51,7 @@ const posts = (await getCollection("project")).sort(
           }
         </ul>
       </section>
-    </main>
+    </div>
 
     <Footer />
   </body>
