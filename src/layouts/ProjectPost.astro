@@ -23,7 +23,7 @@ const { title, description, pubDate, updatedDate, heroImage, extLink } =
 
     <main class="w-[calc(100%-2em)] max-w-full mx-0">
       <article>
-        {/* Hero Image */}
+        <!-- {/* Hero Image */}
         <div class="w-full">
           {
             heroImage && (
@@ -36,7 +36,7 @@ const { title, description, pubDate, updatedDate, heroImage, extLink } =
               />
             )
           }
-        </div>
+        </div> -->
         <div class="w-180 max-w-[calc(100%-2em)] mx-auto p-4">
           <div class="mb-4 py-4 text-center leading-none">
             <div class="mb-2 text-[rgb(var(--gray))]">
@@ -54,16 +54,16 @@ const { title, description, pubDate, updatedDate, heroImage, extLink } =
             <hr class="my-2" />
 
             {/* External Link */}
-            <h2>
+            <h3>
               <a
                 href={extLink}
                 class="text-black no-underline border-b-2 border-transparent hover:border-gray-400"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                link
+                Project Link
               </a>
-            </h2>
+            </h3>
           </div>
 
           <slot />
