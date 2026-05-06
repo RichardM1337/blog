@@ -23,15 +23,16 @@ const { src, alt = "" } = Astro.props;
     const run = () => {
       if (!img.naturalWidth) return;
 
-      const containerWidth = wrapper.clientWidth;
-      let cols = Math.floor(containerWidth / 4);
-
-      cols = Math.max(80, Math.min(cols, 200));
-
       const aspectRatio = img.naturalHeight / img.naturalWidth;
       const charAspect = 0.9;
 
-      const rows = Math.floor(cols * aspectRatio * charAspect);
+      const targetRows = 100; // 🔥 uniform height for all images
+      let rows = targetRows;
+
+      let cols = Math.floor(rows / (aspectRatio * charAspect));
+
+      // optional clamp so super-wide images don’t explode
+      cols = Math.max(60, Math.min(cols, 200));
 
       canvas.width = cols;
       canvas.height = rows;
