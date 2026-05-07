@@ -5,6 +5,7 @@ pubDate: 'May 05 2025'
 heroImage: '../../assets/aivshuman.png'
 extLink: 'https://artagainstthemachine.netlify.app/'
 ---
+la la la la skill milestone
 
 ## Background
 
