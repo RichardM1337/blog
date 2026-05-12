@@ -2,8 +2,9 @@
 const { src, alt = "" } = Astro.props;
 ---
 
-<div class="ascii-wrapper w-full overflow-x-auto">
+<div class="ascii-wrapper w-full overflow-x-auto select-none">
   <pre
+    aria-hidden="true"
     class="ascii max-w-full overflow-hidden text-[4px] sm:text-[6px] md:text-[7px] lg:text-[8px] leading-1.5 whitespace-pre">
   </pre>
   <img class="hidden img" src={src} alt={alt} />
@@ -26,7 +27,7 @@ const { src, alt = "" } = Astro.props;
       const aspectRatio = img.naturalHeight / img.naturalWidth;
       const charAspect = 0.9;
 
-      const targetRows = 100; // 🔥 uniform height for all images
+      const targetRows = 100;
       let rows = targetRows;
 
       let cols = Math.floor(rows / (aspectRatio * charAspect));

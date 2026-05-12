@@ -1,0 +1,88 @@
+---
+const lines = [
+  "Starting MS-DOS...",
+  "The IBM Personal Computer Basic",
+  "Version C1.10 Copyright 1981 IBM Corp.",
+  "Ok",
+  "",
+  "WELCOME BACK",
+];
+---
+
+<div
+  id="boot"
+  class="fixed inset-0 z-9999 overflow-hidden text-white bg-black font-mono"
+>
+</div>
+<div
+  class="fisheye h-full w-full p-12
+  bg-black text-green-400 font-mono
+  text-2xl sm:text-3xl md:text-4xl
+  font-extrabold
+  tracking-[0.35em]
+  leading-[2.2rem]
+  uppercase
+  drop-shadow-[0_0_10px_rgba(34,197,94,0.35)]"
+>
+  <pre
+    id="boot-text"
+    class="whitespace-pre-wrap after:content-['_'] after:animate-pulse">
+  </pre>
+</div>
+
+<script define:vars={{ lines }}>
+  sessionStorage.removeItem("booted");
+  const alreadyBooted = sessionStorage.getItem("booted");
+
+  const boot = document.querySelector("#boot");
+  const text = document.querySelector("#boot-text");
+
+  if (alreadyBooted) {
+    boot?.remove();
+  } else {
+    sessionStorage.setItem("booted", "true");
+
+    let lineIndex = 0;
+    let charIndex = 0;
+    let output = "";
+
+    const type = () => {
+      const currentLine = lines[lineIndex];
+      if (lineIndex >= lines.length) {
+        boot.classList.add("opacity-0", "duration-700", "pointer-events-none");
+
+        setTimeout(() => boot.remove(), 700);
+        return;
+      }
+      if (charIndex < currentLine.length) {
+        output += currentLine[charIndex];
+        text.textContent = output;
+
+        const char = currentLine[charIndex];
+        charIndex++;
+        let delay = 20 + Math.random() * 40;
+        if (char === ".") delay += 120;
+        if (char === " ") delay += 20;
+        setTimeout(type, delay);
+      } else {
+        output += "\n";
+        text.textContent = output;
+        lineIndex++;
+        charIndex = 0;
+        const lineDelay = 200 + Math.random() * 400;
+        setTimeout(type, lineDelay);
+      }
+    };
+    type();
+  }
+</script>
+
+<style>
+  .fisheye {
+    transform: perspective(1000px) scale(1.05) rotateX(2deg);
+
+    transform-origin: center center;
+
+    filter: contrast(1.08);
+  }
+</style>
