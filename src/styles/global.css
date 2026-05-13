@@ -1,15 +1,17 @@
 @import "tailwindcss";
+:root {
+	--font-jetmono: 'JetBrains Mono', monospace;
+}
 body {
 	font-family: var(--font-jetmono);
-	/* margin: 0;
-	padding: 0;
-	text-align: left;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	font-size: 20px;
-	line-height: 1.7;
-	min-height:100vh */
+	cursor: url('../assets/cursor/cursor.cur'), auto;
+}
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+	cursor: url('../assets/cursor/hover.cur') 16 16, pointer;
 }
 h1,
 h2,
@@ -17,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-	font:var(--font-);
+	font:var(--font-jetmono);
 	margin: 0 0 0.5rem 0;
 	line-height: 1.2;
 }
@@ -64,14 +66,14 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid gray
+	border-left: 4px solid gray;
 	padding: 0 0 0 20px;
 	margin: 0;
 	font-size: 1.333em;
 }
 hr {
 	border: none;
-	border-top: 1px solid lightgray
+	border-top: 1px solid lightgray;
 }
 @media (max-width: 720px) {
 	body {
