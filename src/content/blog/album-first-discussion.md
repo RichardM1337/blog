@@ -4,9 +4,12 @@ description: '...and other lies I told myself'
 pubDate: 'Jul 15 2022'
 heroImage: '../../assets/audio-engineers.png'
 ---
+
+# My Confession
+
 I have a confession to all that want to read my blog.
 
-I did not imagine that I would want to become an audio engineer. My dreams when I was younger consisted of: astronaut, wildlife photographer, and 'chill guy' (I wanted to live with my parents and do nothing all day).
+I did not imagine that I would want to become an engineer. My dreams when I was younger consisted of: astronaut, wildlife photographer, and 'chill guy' (I wanted to live with my parents and do nothing all day).
 
 As much as I love computers, engineering, and programming, I have to admit that a large portion of the system relies on a chase for monetary gain, terrible work environments, and a heavy notion for people in the industry to "make bank and leave". The era of programmers making things for fun because of their love for logic, puzzles, and making the world a more educated place is long gone and has been concentrated into an extremely small (and possibly highly neurodivergent) portion of the overall population of programmers.
 
