@@ -1,5 +1,14 @@
 ---
 const { src, alt = "" } = Astro.props;
+
+const generatedAlt =
+  src
+    .split("/")
+    .pop()
+    ?.replace(/\.[^/.]+$/, "")
+    .replace(/[-_]/g, " ");
+
+// alt goes unused in favor of using the filename as alt text
 ---
 
 <div class="ascii-wrapper w-full overflow-x-auto select-none">
@@ -7,7 +16,7 @@ const { src, alt = "" } = Astro.props;
     aria-hidden="true"
     class="ascii max-w-full overflow-hidden text-[4px] sm:text-[6px] md:text-[7px] lg:text-[8px] leading-1.5 whitespace-pre">
   </pre>
-  <img class="hidden img" src={src} alt={alt} />
+  <img class="hidden img" src={src} alt={generatedAlt} />
   <canvas class="hidden"></canvas>
 </div>
 
