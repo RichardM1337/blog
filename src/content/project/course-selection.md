@@ -6,4 +6,14 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 extLink: https://github.com/sitechtimes/course-selection-backend
 ---
 
-la la la la I am doing django la lala this will have code segment with problems and reflections 
+## Background
+
+## What is this project?
+
+## Technical Skills
+
+{add code segment here}
+
+## Reflection
+
+{growth milestone}

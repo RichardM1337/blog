@@ -30,3 +30,5 @@ Dell did not choose the traidtional approach of hosting an interview/AMA through
 # conclusion and further thoughts
 
 For a computer engineer, this is embarassign to admit, but Stasis was one of the first times I actually made an attempt at soldering. I failed miserably and I burned straight through a PCB. I also melted a light switch, much to the confusion of other attendees and the event organizers.
+ 
+{learning moment}

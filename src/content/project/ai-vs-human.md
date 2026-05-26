@@ -27,3 +27,6 @@ In order to build this project, various factors needed to be accounted for.
 3.  Splitting the photos betweencategories, to make the game more appealing.
 
 Because of the necessity for datat o be stored in a backend, my personal vendetta for *Django*, and the group's collective experience with *Vue*, we decided to move forward with a MEVN stack.
+
+## Reflection
+

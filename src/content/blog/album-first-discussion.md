@@ -1,8 +1,8 @@
 ---
-title: 'Why audio engineering clicked'
-description: '...and other lies I told myself'
-pubDate: 'Jul 15 2022'
-heroImage: '../../assets/audio-engineers.png'
+title: "Why audio engineering clicked"
+description: "...and other lies I told myself"
+pubDate: "Jul 15 2022"
+heroImage: "../../assets/akaimpc2000xl.png"
 ---
 
 # My Confession
@@ -18,3 +18,9 @@ Naturally, as someone who really didn't want to enter an industry that didn't ke
 I think this is the right choice.
 
 Whenever I hear about Francis and the Lights' Prizmier or Bon Iver's custom Messina, I know that that's something I want to make. I look up to people like Edward Skeletrix that are trying to make something new in the realm of music. I admire people like Quincy Jones, Bernie Grundman, and Mike Dean for their contributions to music, and for the ability for a song to sound good in a car.
+
+Now, when I enter college and eventually update this blog, I hope to fill it with knowledge of music technology, including the classes I take, people I meet, ang albums I make. MY dream is that one day I can return to this blog and completely reinvent it as the main domain for my music dreams.
+
+## Resources
+
+Over the years, I have collected a large database of knowledge in the music technology field, and I am proud of the work I have put in to learn more about the music field. This includes tutorials and walkthroughs in the world of music and DAWs in general, such as those from [synthet](https://www.youtube.com/@synthet7), [wickkidbeats](https://www.instagram.com/wick_kid_beats/?hl=en), [beatsinner](https://beatsinner.com/). I also want to give a special shoutout to all of those programmers that have created such important plugins, like [ZL Audio](https://zl-audio.github.io/), [Ewan Bristow](https://ewanbristow.com/), [tucktuckg00se](https://github.com/tucktuckg00se/INTERSECT), [Analog Obsession (my goat)](https://analogobsession.com/), and [WXAudio](https://www.wxaudioplugins.com/).
