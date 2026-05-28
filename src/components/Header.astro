@@ -12,7 +12,7 @@ import HeaderLink from "./HeaderLink.astro";
         <img
           src="/src/assets/rgif.gif"
           alt="Logo"
-          class="h-12 w-12 sm:h-20 sm:w-20"
+          class="gif h-12 w-12 sm:h-20 sm:w-20 grayscale hover:hue-rotate-15 hover:filter-none transition"
         />
       </a>
     </h2>
@@ -44,3 +44,16 @@ import HeaderLink from "./HeaderLink.astro";
     </div>
   </nav>
 </header>
+<style>
+  @keyframes hue-animation {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  .gif:hover {
+    animation: hue-animation 3s infinite linear;
+  }
+</style>
