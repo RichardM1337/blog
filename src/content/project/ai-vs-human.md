@@ -6,8 +6,6 @@ heroImage: "../../assets/aivshuman.png"
 extLink: "https://artagainstthemachine.netlify.app/"
 ---
 
-la la la la skill milestone
-
 ## Background
 
 At the dawn of time, every innovation had a criticism. Tools, paper, gunpowder, even the nuclear bomb. Oonga Boonga, the guy who invented agriculture, probably was made fun of by his Neanderthal peers for believing fruits and vegetables just magically come out the ground.
@@ -29,5 +27,13 @@ In order to build this project, various factors needed to be accounted for.
 3.  Splitting the photos between categories, to make the game more appealing.
 
 Because of the necessity for data to be stored in a backend, my personal vendetta for _Django_, and the group's collective experience with _Vue_, we decided to move forward with a MEVN stack.
+
+## Struggles
+
+Throughout this project, I made a few mistakes and had various struggles when working. This included a [very memorable Pull Request](https://github.com/sitechtimes/ai-vs-human-art-frontend/pull/74).
+
+![a photo of a pull request with 146 comments and 24 commits](../../assets/exploded-PR.png)
+
+In the subculture of computer scientists and other webdevs at my school, the action of completely trashing and dogpiling on a failed commit or pull request was lovingly and colloquially referred to as "exploding".
 
 ## Reflection

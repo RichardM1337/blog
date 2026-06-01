@@ -5,7 +5,48 @@ pubDate: "Jul 15 2022"
 heroImage: "../../assets/akaimpc2000xl.png"
 ---
 
-# My Confession
+## Introduction
+
+Hi! If you clicked on this article, you wanted to know why audio engineering clicked for me. What works? What doesn't?
+
+Before we get started, I want to explain the realm of audio engineering to the best of my ability.
+
+## Basics
+
+### DAW
+
+A digital audio workstation is the place of choice for creating music. It is the software you download when trying to use an interface to create music.
+
+### Generator
+
+A generator (or 'synth' or 'plugin' etc.) is the actual file (.dll, .vst, .aax etc.) that you download to make a sound. Usually, these are synthesizers, but they could also come in the form of software that samples audio, or other creative means of manipulating audio.
+
+### Effect
+
+An effect is the actual file (.dll, .vst, .aax etc.) that you download to change sounds. There are many various ways you can manipulate sound, but here are the main 3 you will see and need to know to work on music.
+
+#### Delay & reverb
+
+Delay and reverb are the two most common plugins not used for 'dynamics'. Instead, they both provide space for a project. Delay delays the sound, and reverb creates an echo effect around the sound.
+
+#### Equalizer
+
+An equalizer is an effect that displays all of the frequencies of audio, and allows you to cut them out. This can allow a user to
+
+- remove the lower frequencies of a sound to make room for bass instruments
+- remove unwanted frequencies
+- boost high frequencies to make sound clearer
+- etc.
+
+#### Compressor
+
+A compressor is easily your best friend. By using various fields, like a ratio and a threshold, a compressor can boost the quieter parts of a sound while making the very loud parts quieter.
+
+## So what got me into music?
+
+I honestly think growing up where I am, constantly influenced by the hiphop world in the realm of fashion, technology, and even the way I spoke encouraged me to pursue music as a a career. My favorite part about working in computer engineering is the fact that I am able to 'jump' into these niches and specialized fields, because of just how ubiquitous computing is to the modern world.
+
+## My Confession
 
 I have a confession to all that want to read my blog.
 
