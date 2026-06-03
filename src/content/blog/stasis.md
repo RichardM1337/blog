@@ -2,10 +2,10 @@
 title: "Stasis"
 description: "Chronicles of my first hackathon"
 pubDate: "May 20 2026"
-heroImage: "../../assets/stasis.svg"
+heroImage: "./stasis.svg"
 ---
 
-![group photo of all Stasis Hack Club attendees](../../assets/Stasis-groupphoto.jpg)
+![group photo of all Stasis Hack Club attendees](./Stasis-groupphoto.jpg)
 
 I will never forget the fresh smell of Popeyes, and the fear of being seen by others feasting on a chickenwing in the middle of the Dallas/Fort Worth airport.
 

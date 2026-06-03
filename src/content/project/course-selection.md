@@ -2,7 +2,7 @@
 title: "Django for Dummies"
 description: "How being placed onto a random project completely changed my view of backend "
 pubDate: "Jul 15 2022"
-heroImage: "../../assets/languages/dj.png"
+heroImage: "./languages/dj.png"
 extLink: https://github.com/sitechtimes/course-selection-backend
 ---
 

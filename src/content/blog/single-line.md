@@ -2,7 +2,7 @@
 title: "The greatest commit in history"
 description: "only 1 line"
 pubDate: "Jul 15 2022"
-heroImage: "../../assets/commit.png"
+heroImage: "./commit.png"
 ---
 
 ## Introduction
@@ -49,6 +49,6 @@ Look at this snippet. Now look back at the other one. Now back at me.
 
 Someone in the last 2 years of this project had randomly, for no particular reason, attempted to iterate through the double period property in Vue in snake case, and not the camel case that the rest of the code was in.
 
-![A GitHub commit with only a single line of code changed. 'double_period' was changed to 'doublePeriod'](../../assets/the-best-commit.png)
+![A GitHub commit with only a single line of code changed. 'double_period' was changed to 'doublePeriod'](./the-best-commit.png)
 
 Thus ends the era of the greatest commit of all time. That took me 2 days. Check your cases, people.

@@ -20,13 +20,13 @@ export default defineConfig({
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/JetBrainsMono-Regular.woff2"],
+            src: ["./public/fonts/JetBrainsMono-Regular.woff2"],
             weight: 400,
             style: "normal",
             display: "swap",
           },
           {
-            src: ["./src/assets/fonts/JetBrainsMono-Bold.woff2"],
+            src: ["./public/fonts/JetBrainsMono-Bold.woff2"],
             weight: 700,
             style: "normal",
             display: "swap",

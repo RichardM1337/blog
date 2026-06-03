@@ -2,7 +2,7 @@
 title: "AI vs. Human Art"
 description: "A deep dive into the varying perspectives on Artificial Intelligence, and my introduction to tech stacks."
 pubDate: "May 05 2025"
-heroImage: "../../assets/aivshuman.png"
+heroImage: "./aivshuman.png"
 extLink: "https://artagainstthemachine.netlify.app/"
 ---
 
@@ -32,9 +32,9 @@ Because of the necessity for data to be stored in a backend, my personal vendett
 
 Throughout this project, I made a few mistakes and had various struggles when working. This included a [very memorable Pull Request](https://github.com/sitechtimes/ai-vs-human-art-frontend/pull/74).
 
-![a screenshot of a pull request with 146 comments and 24 commits](../../assets/exploded-PR.png)
-![A screenshot of a colleague complaining, in which I replied 'nah trust'](../../assets/nah%20trust.png)
-![a screenshot of a colleague asking me what the point of a reload is, to which I reply, 'reloads the page'](../../assets/reloadsthepage.png)
+![a screenshot of a pull request with 146 comments and 24 commits](./exploded-PR.png)
+![A screenshot of a colleague complaining, in which I replied 'nah trust'](./nah%20trust.png)
+![a screenshot of a colleague asking me what the point of a reload is, to which I reply, 'reloads the page'](./reloadsthepage.png)
 
 In the subculture of computer scientists and other webdevs at my school, the action of completely trashing and dogpiling on a failed commit or pull request was lovingly and colloquially referred to as "exploding".
 
