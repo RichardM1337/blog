@@ -2,7 +2,7 @@
 title: "The greatest commit in history"
 description: "only 1 line"
 pubDate: "Jul 15 2022"
-heroImage: "../../assets/akaimpc2000xl.png"
+heroImage: "../../assets/commit.png"
 ---
 
 ## Introduction

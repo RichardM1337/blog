@@ -32,7 +32,9 @@ Because of the necessity for data to be stored in a backend, my personal vendett
 
 Throughout this project, I made a few mistakes and had various struggles when working. This included a [very memorable Pull Request](https://github.com/sitechtimes/ai-vs-human-art-frontend/pull/74).
 
-![a photo of a pull request with 146 comments and 24 commits](../../assets/exploded-PR.png)
+![a screenshot of a pull request with 146 comments and 24 commits](../../assets/exploded-PR.png)
+![A screenshot of a colleague complaining, in which I replied 'nah trust'](../../assets/nah%20trust.png)
+![a screenshot of a colleague asking me what the point of a reload is, to which I reply, 'reloads the page'](../../assets/reloadsthepage.png)
 
 In the subculture of computer scientists and other webdevs at my school, the action of completely trashing and dogpiling on a failed commit or pull request was lovingly and colloquially referred to as "exploding".
 

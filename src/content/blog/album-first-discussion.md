@@ -64,7 +64,7 @@ Now, when I enter college and eventually update this blog, I hope to fill it wit
 
 ## Resources
 
-Over the years, I have collected a large database of knowledge in the music technology field, and I am proud of the work I have put in to learn more about the music field. This includes tutorials and walkthroughs in the world of music and DAWs in general, such as those from [synthet](https://www.youtube.com/@synthet7), [wickkidbeats](https://www.instagram.com/wick_kid_beats/?hl=en), [beatsinner](https://beatsinner.com/). I also want to give a special shoutout to all of those programmers that have created such important plugins, like [ZL Audio](https://zl-audio.github.io/), [Ewan Bristow](https://ewanbristow.com/), [tucktuckg00se](https://github.com/tucktuckg00se/INTERSECT), [Analog Obsession (my goat)](https://analogobsession.com/), and [WXAudio](https://www.wxaudioplugins.com/).
+Over the years, I have collected a large database of knowledge in the music technology field, and I am proud of the work I have put in to learn more about the music field. This includes tutorials and walkthroughs in the world of music and DAWs in general, such as those from [synthet](https://www.youtube.com/@synthet7), [wickkidbeats](https://www.instagram.com/wick_kid_beats/?hl=en), [beatsinner](https://beatsinner.com/), and [purenoisewithres](https://purenoisewithres.com/). I also want to give a special shoutout to all of those programmers that have created such important plugins, like [ZL Audio](https://zl-audio.github.io/), [Ewan Bristow](https://ewanbristow.com/), [tucktuckg00se](https://github.com/tucktuckg00se/INTERSECT), [Analog Obsession (my goat)](https://analogobsession.com/), and [WXAudio](https://www.wxaudioplugins.com/).
 
 ## The Future
 
