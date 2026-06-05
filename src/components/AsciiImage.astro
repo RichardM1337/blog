@@ -1,5 +1,5 @@
 ---
-const { src, alt = "" } = Astro.props;
+const { src = "", alt = "" } = Astro.props;
 const generatedAlt = src
   ? src.split("/").pop().split(".")[0].replace(/[-_]+/g, " ")
   : "image";
@@ -27,6 +27,8 @@ const generatedAlt = src
     let resizeTimeout;
 
     const run = () => {
+      if (!img || !img.src) return;
+      if (!img.complete || img.naturalWidth === 0) return;
       if (!img.naturalWidth) return;
 
       const aspectRatio = img.naturalHeight / img.naturalWidth;

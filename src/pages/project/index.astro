@@ -36,7 +36,9 @@ const posts = (await getCollection("project")).sort(
                 >
                   <div class="w-full flex justify-center mb-12">
                     <div class="inline-block">
-                      <AsciiImage src={post.data.heroImage.src} alt="" />
+                      {post.data.heroImage && (
+                        <AsciiImage src={post.data.heroImage} alt="" />
+                      )}
                     </div>
                   </div>
 
