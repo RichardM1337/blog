@@ -2,7 +2,7 @@
 title: "Why audio engineering clicked"
 description: "...and other lies I told myself"
 pubDate: "Jul 15 2022"
-heroImage: "./akaimpc2000xl.png"
+heroImage: "/akaimpc2000xl.png"
 ---
 
 ## Introduction

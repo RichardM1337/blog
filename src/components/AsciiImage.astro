@@ -1,11 +1,8 @@
 ---
 const { src, alt = "" } = Astro.props;
-
 const generatedAlt = src
-  .split("/")
-  .pop()
-  ?.replace(/\.[^/.]+$/, "")
-  .replace(/[-_]/g, " ");
+  ? src.split("/").pop().split(".")[0].replace(/[-_]+/g, " ")
+  : "image";
 
 // alt goes unused in favor of using the filename as alt text
 ---
